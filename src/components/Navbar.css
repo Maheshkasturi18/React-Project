@@ -1,0 +1,70 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Crimson Text',serif;
+  }
+
+*::selection{
+    background-color: #1DBFC1;
+}
+
+
+.upp{
+    display: flex;
+    justify-content: space-between;
+}
+
+.upp li{
+    font-size: 18px;
+}
+
+.item-list{
+    /* background-color: #1DBFC1; */
+    transition: all 0.5s ease
+}
+
+.item-list a:hover, .dropdown a:hover {
+    background-color: #1DBFC1;
+    color: white;
+    border-radius: 5px;
+}
+
+
+
+/* dropdown menu */
+.dropdown-content{
+    width: 200px;
+   padding: 10px;
+   display: none;
+   position: absolute;
+   background-color: rgb(242, 253, 253);
+}
+
+.dropdown-content li a:hover{
+    background-color: #1DBFC1;
+    border-radius: 5px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+
+
+
+
+
+
+#button{
+    color: #1DBFC1;
+    border: 1px solid #1DBFC1;
+    transition:all 0.5s ease;
+}
+
+
+#button:hover{
+    color: white;
+    background-color: #1DBFC1;
+}
+
