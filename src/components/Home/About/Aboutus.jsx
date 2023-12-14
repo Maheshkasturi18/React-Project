@@ -7,12 +7,12 @@ export default class Aboutus extends Component {
       <section className="about-bg ">
         <div className="container p-md-4 ">
           <div className="row">
-            <div className="col-lg-6  mb-4 mb-lg-0 ">
+            <div className="col-lg-6 about mb-4 mb-lg-0 ">
               <img src="images/GIF.gif" alt="" className="about-gif img-fluid" />
               <img
                 src="images/about_us_img.jpg"
                 alt=""
-                className="about-img pt-5 ps-5 img-fluid"
+                className="about-img pt-4 ps-3 pt-md-5 ps-md-5 img-fluid"
               />
             </div>
 
@@ -37,6 +37,8 @@ export default class Aboutus extends Component {
           </div>
         </div>
       </section>
+
+
     );
   }
 }

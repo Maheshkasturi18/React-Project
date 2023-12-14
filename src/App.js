@@ -1,4 +1,4 @@
-// import './App.css';
+import './App.css';
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer/Footer";
 import Home from "./components/Home/Home";
@@ -12,6 +12,7 @@ import Corevalue from "./components/AboutUs/Corevalue/Corevalue"
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
+
   return (
     <div>
       <Router>

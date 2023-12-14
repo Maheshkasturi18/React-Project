@@ -7,20 +7,18 @@ import Testimonial from "./Testimonials/Testimonial";
 import Brandvalues from "./BrandValues/Brandvalues";
 import Aboutus from "./About/Aboutus";
 
-function Home(){
-  {
-    return (
-      <div>
-        <Ourvision />
-        <Counter />
-        <Aboutus />
-        <Ourproduct />
-        <Testimonial />
-        <Brandvalues />
-        <Ourclients />
-      </div>
-    );
-  }
+function Home() {
+  return (
+    <div>
+      <Ourvision />
+      <Counter />
+      <Aboutus />
+      <Ourproduct />
+      <Testimonial />
+      <Brandvalues />
+      <Ourclients />
+    </div>
+  );
 }
 
 export default Home;

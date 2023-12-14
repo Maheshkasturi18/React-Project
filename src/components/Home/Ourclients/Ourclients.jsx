@@ -81,13 +81,13 @@ export default class Ourclients extends Component {
             <img src="images/our_client_img7.jpg" className="img-fluid p-2"  alt="" />
             </div>
             <div>
-            <img src="/our_client_img8.jpg"  className="img-fluid p-2" alt="" />
+            <img src="images/our_client_img8.jpg"  className="img-fluid p-2" alt="" />
             </div>
             <div>
-            <img src="/our_client_img9.jpg" className="img-fluid p-2"  alt="" />
+            <img src="images/our_client_img9.jpg" className="img-fluid p-2"  alt="" />
             </div>
             <div>
-            <img src="/our_client_img10.jpg"  className="img-fluid p-2" alt="" />
+            <img src="images/our_client_img10.jpg"  className="img-fluid p-2" alt="" />
             </div>
           </Slider>
           </div>

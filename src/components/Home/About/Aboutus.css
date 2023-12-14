@@ -1,29 +1,31 @@
-
-.about-bg{
-    background-color: rgb(242, 253, 253);
+.about-bg {
+  background-color: rgb(242, 253, 253);
 }
 
+.about-gif {
+  position: absolute;
+  width: 125px;
+  height: 125px;
+}
+.about {
+  position: relative;
+}
+.about-img {
+  aspect-ratio: 4/3;
 
-.about-gif{
-    position: absolute;
-    max-width: 10%;
-    max-height: 20%;
 }
 
-.about-img{
-    aspect-ratio: 4/3;
-    max-width: 100%;
-    max-height: 100%;
-    
+.about-head {
+  color: #1dbfc1;
 }
 
-.about-head{
-    color: #1DBFC1;
+.about-bg p {
+  font-size: 17px;
 }
 
-.about-bg p{
-    font-size: 17px;
+@media screen and (max-width : 500px) {
+    .about-gif {      
+        width: 90px;
+        height: 90px;
+      }
 }
-
-
-

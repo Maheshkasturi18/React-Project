@@ -109,6 +109,7 @@ export default class Leadership extends Component {
                   className="img-fluid "
                   width={"124px"}
                   height={"124px"}
+                  alt=""
                 />
               </div>
               <div className="text-center text-md-start">

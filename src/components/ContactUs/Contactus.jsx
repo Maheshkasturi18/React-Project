@@ -173,6 +173,7 @@ export default class Contactus extends Component {
             <iframe
               width="100%"
               height="100%"
+              title=""
               id="gmap_canvas"
               src="https://maps.google.com/maps?q=emperia+1900&t=&z=15&ie=UTF8&iwloc=&output=embed"
               frameborder="0"
@@ -181,9 +182,11 @@ export default class Contactus extends Component {
               marginwidth="0"
             ></iframe>
             <a href="https://www.tabclocktab.com/">clock tab</a>
-            <br />
-            <a href="https://www.clock-alarm.com/"></a>
-            <br />
+            <br/>
+            <a href="https://www.clock-alarm.com/"> 
+            {/* dd */}
+            </a>
+            <br/>
            
           </div>
         </div>
