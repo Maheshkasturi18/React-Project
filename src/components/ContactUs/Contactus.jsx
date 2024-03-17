@@ -1,8 +1,31 @@
 import React, { Component } from "react";
 import "./Contactus.css";
+import * as Yup from "yup";
 
 export default class Contactus extends Component {
   render() {
+    const validationSchema = Yup.object({
+      firstname: Yup.string().required("First name is required"),
+      lastname: Yup.string().required("Last name is required"),
+      number: Yup.string()
+        .matches(/^\d{10}$/, "Contact number must be 10 digits")
+        .required(),
+      email: Yup.string().required("Email is required").email("invalid email"),
+    });
+
+    const handleSubmit = (e) => {
+      e.preventDefault();
+
+      let fromData = {
+        firstname: e.target[0].value,
+        lastname: e.target[1].value,
+        number: e.target[2].value,
+        email: e.target[3].value,
+      };
+
+      console.log(fromData);
+    };
+
     return (
       <section className="contact-us">
         <div className="container py-5 ">
@@ -66,8 +89,13 @@ export default class Contactus extends Component {
               </div>
             </div>
 
+            {/* form */}
             <div className="col-lg-6 ">
-              <form class=" border border-light p-5 bg-white" action="#!">
+              <form
+                class=" border border-light p-5 bg-white"
+                action="#!"
+                onSubmit={handleSubmit}
+              >
                 <div className="row mb-4">
                   <label for="Name" className="form-label fw-bold fs-5">
                     Name <span className="text-danger">*</span>
@@ -78,6 +106,7 @@ export default class Contactus extends Component {
                       id="Name"
                       className="form-control bg-light-subtle"
                       aria-describedby="firstname"
+                      name="firstname"
                     />
                     <div id="firstname" className="form-text">
                       First
@@ -90,6 +119,7 @@ export default class Contactus extends Component {
                       id="Name"
                       className="form-control bg-light-subtle"
                       aria-describedby="lastname"
+                      name="lastname"
                     />
                     <div id="lastname" className="form-text">
                       Last
@@ -105,6 +135,7 @@ export default class Contactus extends Component {
                     type="text"
                     id="Contact"
                     className="form-control bg-light-subtle"
+                    name="number"
                   />
                 </div>
 
@@ -114,8 +145,9 @@ export default class Contactus extends Component {
                   </label>
                   <input
                     type="email"
-                    id="Email"
+                    id="email"
                     className="form-control mb-4 bg-light-subtle "
+                    name="email"
                   />
                 </div>
 
@@ -127,6 +159,7 @@ export default class Contactus extends Component {
                     type="text"
                     id="subject"
                     className="form-control bg-light-subtle"
+                    name="subject"
                   />
                 </div>
 
@@ -138,6 +171,7 @@ export default class Contactus extends Component {
                     className="form-control  bg-light-subtle"
                     id="exampleFormControlTextarea2"
                     rows="3"
+                    name="message"
                   ></textarea>
                 </div>
 
@@ -182,21 +216,11 @@ export default class Contactus extends Component {
               marginwidth="0"
             ></iframe>
             <a href="https://www.tabclocktab.com/">clock tab</a>
-            <br/>
-            <a href="https://www.clock-alarm.com/"> 
-            {/* dd */}
-            </a>
-            <br/>
-           
+            <br />
+            <a href="https://www.clock-alarm.com/">{/* dd */}</a>
+            <br />
           </div>
         </div>
-
-
-
-
-
-
-
       </section>
     );
   }

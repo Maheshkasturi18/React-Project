@@ -218,7 +218,9 @@ class Navbar extends Component {
                 </span> */}
               </Link>
             </div>
+            
           </div>
+
         </nav>
       </header>
     );

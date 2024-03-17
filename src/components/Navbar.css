@@ -9,6 +9,7 @@
   background-color: #1dbfc1;
 }
 
+/* start */
 /* Remove border from toggler */
 .navbar-toggler {
   border: 0 !important;
@@ -72,7 +73,7 @@
 .navbar-toggler.collapsed .toggler-icon {
   background-color: #777777;
 }
-
+/* end */
 
 .upp {
   display: flex;
